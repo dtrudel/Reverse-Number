@@ -6,19 +6,19 @@ class ReverseNumber
    public static void main(String args[])
    {
 // get input
-int n, reverse = 0;
+int t, reverse = 0;
  
-      System.out.println("Enter the number to reverse");
+      System.out.println("Enter a number");
       Scanner in = new Scanner(System.in);
-      n = in.nextInt();
+      t = in.nextInt();
 // reverse input 
-      while( n != 0 )
+      while( t != 0 )
       {
           reverse = reverse * 10;
-          reverse = reverse + n%10;
-          n = n/10;
+          reverse = reverse + t%10;
+          t = t/10;
       }
  // output the new number
-      System.out.println("Reverse of entered number is "+reverse);
+      System.out.println("Reverse of the number is "+reverse);
    }
 }
